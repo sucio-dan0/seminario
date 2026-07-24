@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explored | Boleto</title>
+
+<link rel="stylesheet" href="../css/boleto.css">
+
+</head>
+
+<body>
+
+<div class="boleto">
+
+
+<form action="principal.html" method="get">
+
+<button type="submit" class="salir">
+SALIR
+</button>
+
+</form>
+
+
+
+<div class="encabezado">
+
+<h1>EXPLORED</h1>
+
+<p>BOLETO DIGITAL</p>
+
+</div>
+
+
+
+<div class="imagen">
+
+<img id="imagenEvento" src="" alt="Evento">
+
+</div>
+
+
+
+<div class="informacion">
+
+
+<h2 id="nombreEvento"></h2>
+
+
+<p>
+<strong>Lugar:</strong>
+<span id="lugarEvento"></span>
+</p>
+
+
+<p>
+<strong>Fecha:</strong>
+<span id="fechaEvento"></span>
+</p>
+
+
+<p>
+<strong>Hora:</strong>
+<span id="horaEvento"></span>
+</p>
+
+
+<p>
+<strong>Cantidad:</strong>
+<span id="cantidadBoletos"></span>
+</p>
+
+
+
+</div>
+
+
+
+<div class="folio">
+
+
+<h3>CLAVE DEL BOLETO</h3>
+
+
+<div class="clave" id="codigoBoleto">
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="../js/boleto.js"></script>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const modo=localStorage.getItem("modoDaltonico");
+
+if(modo){
+
+document.body.classList.add(modo);
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>

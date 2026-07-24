@@ -1,0 +1,22 @@
+<?php
+
+$host = "localhost";
+$usuario = "root";
+$password = "kenny.2020";
+$bd = "explored";
+
+
+$conexion = new mysqli($host,$usuario,$password,$bd);
+
+
+if($conexion->connect_errno){
+
+    die("Error de conexión: ".$conexion->connect_error);
+
+}
+
+
+$conexion->set_charset("utf8mb4");
+
+
+?>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explored | Evento</title>
+
+<link rel="stylesheet" href="../css/evento.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="izquierda">
+
+<h1>Explored</h1>
+
+<img id="imagenEvento" src="" alt="Evento">
+
+<h2 id="nombreEvento"></h2>
+
+<div class="descripcion">
+
+<p>
+<strong>Descripción:</strong>
+<span id="descripcionEvento"></span>
+</p>
+
+<p>
+<strong>Lugar:</strong>
+<span id="lugarEvento"></span>
+</p>
+
+</div>
+
+
+<div class="fecha">
+
+<span id="fechaEvento"></span>
+,
+<span id="horaEvento"></span>
+
+</div>
+
+
+<button type="button" onclick="window.location.href='principal.html'">
+
+SALIR
+
+</button>
+
+
+</div>
+
+
+
+<div class="derecha">
+
+
+<div class="boletos">
+
+<span>Boletos:</span>
+
+<select id="cantidadBoletos">
+
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+
+</select>
+
+</div>
+
+
+
+<h2>BOLETOS DISPONIBLES</h2>
+
+<h1 id="boletosEvento"></h1>
+
+
+
+<form id="formComprar">
+
+<button type="submit" class="comprar">
+
+COMPRAR
+
+</button>
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+<script src="../js/evento.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const modo=localStorage.getItem("modoDaltonico");
+
+if(modo){
+
+document.body.classList.add(modo);
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>

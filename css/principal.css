@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+.contenedor{
+    display:flex;
+    min-height:100vh;
+}
+
+.menu{
+    width:220px;
+    background:#181818;
+    border-right:1px solid #444;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.menu h2{
+    text-align:center;
+    color:#fff;
+}
+
+.cerrar{
+    padding:15px;
+    border:none;
+    background:#c62828;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.cerrar:hover{
+    background:#e53935;
+}
+
+.contenido{
+    flex:1;
+    padding:40px;
+}
+
+.contenido h1{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.contenido input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+#contenedorEventos{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.evento{
+    background:#1d1d1d;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+.info{
+    width:55%;
+}
+
+.info h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.info p{
+    margin:10px 0;
+    color:#ddd;
+    font-size:17px;
+}
+
+.info button{
+    margin-top:20px;
+    padding:12px 40px;
+    border:none;
+    border-radius:8px;
+    background:#c62828;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.info button:hover{
+    background:#e53935;
+}
+
+.evento img{
+    width:280px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.botones{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:35px;
+}
+
+.btn{
+    padding:15px 40px;
+    border:none;
+    background:#c62828;
+    color:#fff;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#e53935;
+}
+
+.botonesDaltonico{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:9999;
+}
+
+.botonesDaltonico button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#444;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botonesDaltonico button:hover{
+    background:#666;
+}
+
+/* Daltonismo */
+
+body.protanopia{
+    filter:contrast(120%) saturate(80%) hue-rotate(-10deg);
+}
+
+body.deuteranopia{
+    filter:contrast(120%) saturate(85%) hue-rotate(20deg);
+}
+
+body.tritanopia{
+    filter:contrast(120%) saturate(90%) hue-rotate(90deg);
+}

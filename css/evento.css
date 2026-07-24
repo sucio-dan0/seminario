@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+.contenedor{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+    padding:40px 60px;
+}
+
+.izquierda{
+    width:48%;
+}
+
+.izquierda h1{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.izquierda img{
+    width:100%;
+    max-width:550px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.izquierda h2{
+    margin:20px 0;
+    font-size:30px;
+}
+
+.descripcion{
+    background:#1d1d1d;
+    padding:20px;
+    border-radius:10px;
+    color:#ddd;
+}
+
+.descripcion p{
+    margin:10px 0;
+}
+
+.fecha{
+    margin:20px 0 30px;
+    padding:15px 0;
+    border-top:1px solid #444;
+    border-bottom:1px solid #444;
+    font-size:22px;
+}
+
+/* BOTÓN SALIR */
+
+.izquierda button{
+    width:220px;
+    height:55px;
+    background:#c62828;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.izquierda button:hover{
+    background:#e53935;
+}
+
+/* LADO DERECHO */
+
+.derecha{
+    width:40%;
+    text-align:center;
+}
+
+/* CONTADOR */
+
+.boletos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.boletos span{
+    font-size:24px;
+}
+
+.boletos button{
+    width:40px;
+    height:40px;
+    background:#c62828;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.boletos button:hover{
+    background:#e53935;
+}
+
+.boletos input{
+    width:60px;
+    height:40px;
+    text-align:center;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:20px;
+}
+
+/* ESTE ES EL CAMBIO */
+
+.derecha h2{
+    font-size:18px;
+    margin-top:20px;
+    margin-bottom:8px;
+    color:#ddd;
+}
+
+.derecha h1{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+/* BOTÓN COMPRAR */
+
+.comprar{
+    width:220px;
+    height:55px;
+    background:#c62828;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.comprar:hover{
+    background:#e53935;
+}
+.botonesDaltonico{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:9999;
+}
+
+.botonesDaltonico button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#444;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botonesDaltonico button:hover{
+    background:#666;
+}
+
+/* ===========================
+   MODOS DE DALTONISMO
+=========================== */
+
+/* Protanopia */
+body.protanopia{
+    filter:contrast(120%) saturate(80%) hue-rotate(-10deg);
+}
+
+/* Deuteranopia */
+body.deuteranopia{
+    filter:contrast(120%) saturate(85%) hue-rotate(20deg);
+}
+
+/* Tritanopia */
+body.tritanopia{
+    filter:contrast(120%) saturate(90%) hue-rotate(90deg);
+}

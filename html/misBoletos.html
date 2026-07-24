@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explored | Mis Boletos</title>
+
+<link rel="stylesheet" href="../css/misBoletos.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>EXPLORED</h1>
+
+<h2>Mis boletos</h2>
+
+
+<div id="listaBoletos">
+
+</div>
+
+
+<button onclick="window.location.href='principal.html'">
+
+REGRESAR
+
+</button>
+
+
+</div>
+
+
+<script src="../js/misBoletos.js"></script>
+<script src="../js/daltonico.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const modo=localStorage.getItem("modoDaltonico");
+
+if(modo){
+
+document.body.classList.add(modo);
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>

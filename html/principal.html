@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explored</title>
+<link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+<div class="contenedor">
+<aside class="menu">
+<h2>Explored</h2>
+<form action="inicio.html" method="get">
+<button type="submit" class="cerrar">
+Cerrar sesión
+</button>
+</form>
+</aside>
+<main class="contenido">
+<h1>Explored</h1>
+<input
+type="text"
+id="buscador"
+placeholder="Buscar evento...">
+<div id="contenedorEventos">
+</div>
+<div class="botones">
+<button 
+type="button" 
+class="btn"
+onclick="window.location.href='misBoletos.html'">
+CONSULTAR BOLETOS
+</button>
+</div>
+<div class="botonesDaltonico">
+<button id="btnProtanopia">
+Protanopia
+</button>
+<button id="btnDeuteranopia">
+Deuteranopia
+</button>
+<button id="btnTritanopia">
+Tritanopia
+</button>
+<button id="btnNormal">
+Normal
+</button>
+</div>
+</main>
+</div>
+<script src="../js/daltonico.js"></script>
+<script src="../js/principal.js"></script>
+</body>
+</html>
