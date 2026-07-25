@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explored | Agregar Evento</title>
+
+    <link rel="stylesheet" href="../css/agregarEvento.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>Agregar Evento</h1>
+
+    <form id="eventoForm" enctype="multipart/form-data">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre del evento"
+            required>
+
+        <input
+            type="date"
+            id="fecha"
+            required>
+
+        <input
+            type="time"
+            id="hora"
+            required>
+
+        <input
+            type="text"
+            id="lugar"
+            placeholder="Lugar"
+            required>
+
+        <textarea
+            id="descripcion"
+            placeholder="Descripción"
+            required></textarea>
+
+        <input
+            type="file"
+            id="imagen"
+            accept="image/*"
+            required>
+            <input
+    type="number"
+    id="boletos"
+    placeholder="Cantidad de boletos"
+    min="1"
+    required>
+
+        <button type="submit">
+            Guardar Evento
+        </button>
+
+    </form>
+
+    <a href="admin.html">Regresar</a>
+
+</div>
+
+<script src="../js/agregarEvento.js"></script>
+
+</body>
+</html>
